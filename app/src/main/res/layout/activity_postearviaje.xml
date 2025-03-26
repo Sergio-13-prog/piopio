@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+
+
+
+    <TextView
+        android:id="@+id/estadoSesionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/btn_default"
+        android:textColor="@android:color/black"
+        android:onClick="abrirLogin"
+        android:layout_gravity="right"
+
+        />
+
+    <EditText
+        android:id="@+id/origenEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ciudad de origen"
+        android:background="@android:drawable/editbox_background"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destino"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:textSize="16sp" />
+
+
+
+    <EditText
+        android:id="@+id/fechaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecciona una fecha"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/btnPostear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publicar viaje"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+            />
+
+
+</LinearLayout>

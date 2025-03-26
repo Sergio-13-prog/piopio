@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imagenPerfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen de perfil" />
+
+    <Button
+        android:id="@+id/btnSubirImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subir Imagen"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Usuario"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/editarNombreEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Editar nombre"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+       />
+
+    <Button
+        android:id="@+id/btnGuardarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Perfil"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="32dp" />
+
+
+    <Button
+        android:id="@+id/btnPostearViaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Postear viaje"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_marginTop="160dp"/>
+
+
+</LinearLayout>

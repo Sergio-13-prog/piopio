@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+
+    <TextView
+        android:id="@+id/estadoSesionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/btn_default"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/viajeDetallesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalles del viaje"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/black"
+        android:background="@android:drawable/btn_default"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/estadoSesionTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnPerfilUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perfil usuario"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/black"
+        android:background="@android:drawable/btn_default"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/viajeDetallesTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/btnContactar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contactar"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnPerfilUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

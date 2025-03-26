@@ -1,0 +1,27 @@
+# Archivos generados de compilación
+/build
+/.gradle
+/.idea
+/local.properties
+*.iml
+
+# Configuración de Android Studio
+/.vscode
+/.cxx
+
+# Archivos de Google/Firebase
+google-services.json
+
+# Caché y configuraciones innecesarias
+/captures
+.externalNativeBuild
+/.DS_Store
+*.log
+
+# Claves y variables de entorno (añade aquí tus propios archivos sensibles si los tienes)
+/.env
+/config.json
+/secrets.json
+
+# Docker
+#docker-compose.yml
